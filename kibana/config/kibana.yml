@@ -2,10 +2,10 @@
 port: 5601
 
 # The host to bind the server to.
-host: "localhost"
+host: "0.0.0.0"
 
 # The Elasticsearch instance to use for all your queries.
-#elasticsearch_url: "http://localhost:9200"
+elasticsearch_url: "http://localhost:9200"
 
 # preserve_elasticsearch_host true will send the hostname specified in `elasticsearch`. If you set it to false,
 # then the host you use to connect to *this* Kibana instance will be sent.
@@ -43,7 +43,7 @@ request_timeout: 3000000
 
 # Time in milliseconds for Elasticsearch to wait for responses from shards.
 # Set to 0 to disable.
-shard_timeout: 30000
+shard_timeout: 0
 
 # Time in milliseconds to wait for Elasticsearch at Kibana startup before retrying
 # startup_timeout: 5000
